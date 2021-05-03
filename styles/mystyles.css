@@ -1,0 +1,643 @@
+img, object, embed
+	{
+	max-width: 100%;
+	}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img 
+	{
+	width:100%;
+	}
+
+/* Flex Banner Styles */
+.banner {
+  color: black;
+  background: #ffffff;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+}
+
+.banner h1{
+  font-size: 50px;
+  font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
+}
+
+.banner img {
+	padding: 0;
+	width: 10%;
+	height: 100%;
+	display: block;
+	margin-left: 0;
+        margin-right: 0;
+}
+
+/* Basic Styles */
+#container 
+	{
+	max-width: 72em; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+h1, h2, h3, h4, h5
+{
+        font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;		
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	line-height: 1.2;
+}
+
+p
+{
+       letter-spacing: 1px;
+       word-spacing: 3px;
+       line-height: 1.2;
+}
+
+col_content{
+       margin-top:30px;
+}
+
+/*Navigation*/
+
+.topnav {
+  float: right;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-top: -35px;	
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #FFF5E9;
+  color: black;
+}
+
+.topnav a.active {
+  color: black;
+  font-weight: bold;
+}
+
+
+/* Flexbox */
+
+.flexbox-container {
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+    padding: 0;
+	margin-bottom:50px;
+	list-style: none;
+	row-gap: 2em;
+}
+
+.flexbox-item {
+    width: 300px;
+	height: 300px;
+	padding: 5px;
+    margin: 10px;
+	line-height:200px;
+    border: 3px solid #ffffff;
+    background-color: #dfdfdf;
+}
+
+
+/* Flip Card Styles*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-inner h1{
+  color: #FFB357;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #ffffff;
+  color: black;
+  transform: rotateY(180deg);
+  border-radius: 2px;
+}
+
+/*Communication Page Full Page Tabs*/
+
+.tablink {
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.33%;
+}
+
+.tablink:active {
+  background-color: #FFF5E9;
+}
+
+.tablink:hover {
+  background-color: #FFF5E9;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #000000;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.tabcontent img {
+  width: 150px;
+  padding: 20px;
+  float: right;	
+}
+/*Responsive iFrame*/
+
+.mapbox {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 80%;
+  border: none;
+}
+
+/*Accordion*/
+
+.accordion1, .accordion2, .accordion3, .accordion4, .accordion5 {
+    color: black;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+	cursor: pointer;
+}
+
+.accordion1 {
+	background-color: #FFAD4C;
+}
+
+.accordion2 {
+	background-color: #FFC279;
+}
+
+.accordion3 {
+	background-color: #FFE2A8;
+}
+
+.accordion4 {
+	background-color: #FFEC9C;
+}
+
+.accordion5 {
+	background-color: #FFDD4A;
+}  
+ 
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.content img {
+    	width: 30%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.content audio {
+	margin: auto;
+	display: block;
+}
+
+.content h5 {
+	text-align: center;
+	font-size: 18px;
+}
+
+/*Diversity References Collapsible*/
+.collapsible {
+  background-color: #FFF6D2;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;	
+ }
+
+.collapsible:active, .collapsible:hover {
+  background-color: #FFEA93;
+}
+
+.reference {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+/*Footer Styles*/
+
+.footer {
+   height: 2%;
+   background-color: #FFF5E9;
+   color: black;
+   padding: .2em;
+   text-align: center;
+}
+
+.footer img {
+   display: inline-block;
+   width: 150px;
+   margin-left: 75px;	
+}
+
+.footer ul {
+   list-style-type: none;
+}
+
+.validators {
+   margin-bottom: 0.5em;
+   float: left;
+   line-height: 1.5em	
+}
+
+.validators img {
+  width: 70px;
+  border: .5px solid;
+  padding: 1.5px;	
+}
+
+.links {
+  margin-bottom: 0.1em;
+  float: right;
+  line-height: 2em;
+  text-align: left;
+  font-weight: bold;	
+}
+
+.copyright {
+  clear: both;	
+  text-align: center;
+  font-size: small;	
+}
+
+.footer a:link {
+   color: black;	
+   text-decoration: none;
+	}
+
+.footer a:active {
+   color: black;	
+}
+
+.footer a:hover {
+   color: #FFB357;
+}
+
+.footer a:visited {
+    color: black;	
+}
+
+
+/*Styles for screen 1000px and lower*/
+@media screen and (max-width: 1000px) {
+	
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+		
+}
+
+/*Styles for screen 770 and lower*/
+@media screen and (max-width: 770px) {
+	
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.topnav {
+  float: left;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 8px;
+  text-decoration: none;
+  font-size: 20px;
+}
+	
+.tablink {
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 32.4%;
+}		
+		
+}
+
+/*Styles for screen 700px and lower*/
+@media screen and (max-width: 700px) {
+	
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.footer {
+   height: 2%;
+   background-color: #FFF5E9;
+   color: black;
+   padding: .2em;
+   text-align: center;
+}
+
+.footer img {
+   display: inline-block;
+   width: 150px;
+   margin-left: 75px;	
+}	
+
+.validators {
+   margin-bottom: 0.5em;
+   margin-left: -80px;	
+   float: left;
+   line-height: 1.5em	
+}
+
+.validators img {
+  width: 40px;
+  border: .5px solid;
+  padding: 1.5px;	
+}
+	
+.links {
+  margin-bottom: 0.1em;
+  margin-left: -10px;
+  float: right;
+  line-height: 2em;
+  text-align: left;
+  font-weight: bold;	
+}	
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+	
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.footer img {
+   display: inline-block;
+   width: 150px;
+   margin-left: auto;	
+}
+	
+}
+
+/*Styles for screen 480px and lower*/
+@media only screen and (max-width : 480px) {
+
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.topnav {
+  float: left;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 7px;
+  text-decoration: none;
+  font-size: 20px;
+}
+	
+.tablink {
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 100%;
+}		
+
+/*Footer Styles*/
+
+.footer {
+   height: .5%;
+   text-align: center;
+}
+
+.footer img {
+   display: inline-block;
+   width: 150px;
+   margin-left: auto;	
+}
+
+.validators {
+   margin-bottom: 0.5em;
+   margin-left: -35px;
+   float: none; 
+}
+
+.links {
+  margin-bottom: 0.1em;
+  margin-left: -35px;	
+  line-height: 1.00em;
+  float: none;
+  text-align: center;
+  font-weight: bold;	
+}
+
+.copyright {
+  clear: both;	
+  text-align: center;
+  font-size: small;	
+}	
+	
+}
+/*Styles for screen 420px and lower*/
+@media only screen and (max-width : 420px) {
+.tabcontent img {
+  width: 150px;
+  padding: 20px;
+  float: none;	
+}
+}
+
+/*Styles for screen 360px and lower*/
+@media only screen and (max-width : 360px) {
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+}	
+
+/*Styles for screen 320px and lower*/
+@media only screen and (max-width : 320px) {
+	
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+			
+.topnav {
+  float: left;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 2px;
+  text-decoration: none;
+  font-size: 18px;
+}
+	
+	
+.tablink {
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 100%;
+}
+
+.tabcontent img {
+  width: 150px;
+  padding: 20px;
+  float: left;	
+}
+
+/*Footer Styles*/
+
+.footer {
+   height: .5%;
+   text-align: center;
+}
+
+.footer img {
+   display: inline-block;
+   width: 150px;
+}
+
+.validators {
+   margin-bottom: 0.5em;
+   margin-left: -35px;
+   line-height: 1.25em	
+}
+
+.links {
+  margin-bottom: 0.1em;
+    line-height: 1.00em;
+  text-align: center;
+  font-weight: bold;	
+}
+
+.copyright {
+  clear: both;	
+  text-align: center;
+}	
+	
+}
